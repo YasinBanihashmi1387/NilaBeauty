@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه نیلا بیوتی - بهترین محصولات آرایشی و بهداشتی">
+    <title>فروشگاه | نیلا بیوتی</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b8b',
+                        secondary: '#ffb8c6',
+                        dark: '#3f1721',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-white to-pink-50 font-sans">
+    <custom-header></custom-header>
+    
+    <main class="container mx-auto px-4 py-8">
+        <!-- Shop Hero -->
+        <section class="relative rounded-3xl overflow-hidden mb-8 h-48">
+            <img src="http://static.photos/cosmetic/1200x630/23" alt="فروشگاه نیلا بیوتی" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-dark/60 to-primary/60 flex items-center px-8">
+                <div class="text-white">
+                    <h1 class="text-3xl font-bold mb-2">فروشگاه محصولات آرایشی</h1>
+                    <p class="text-lg">بهترین برندهای روز دنیا با ضمانت اصالت کالا</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Content -->
+        <div class="md:flex gap-8">
+            <!-- Sidebar -->
+            <aside class="md:w-1/4 mb-8 md:mb-0">
+                <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-4">
+                    <!-- Categories -->
+                    <div class="mb-8">
+                        <h3 class="font-bold text-lg text-dark mb-4 flex items-center">
+                            <i data-feather="list" class="w-5 h-5 mr-2"></i>
+                            دسته بندی‌ها
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>آرایش صورت</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۴۲</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>آرایش چشم</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۲۸</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>مراقبت پوست</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۳۵</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>عطر و ادکلن</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۱۹</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>محصولات مو</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۱۵</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-primary">
+                                    <span>ابزار آرایشی</span>
+                                    <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">۲۳</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Filter by Price -->
+                    <div class="mb-8">
+                        <h3 class="font-bold text-lg text-dark mb-4 flex items-center">
+                            <i data-feather="dollar-sign" class="w-5 h-5 mr-2"></i>
+                            محدوده قیمت
+                        </h3>
+                        <div class="px-2">
+                            <input type="range" min="0" max="1000000" value="500000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-sm text-gray-600 mt-2">
+                                <span>۰ تومان</span>
+                                <span>۱,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter by Brand -->
+                    <div class="mb-8">
+                        <h3 class="font-bold text-lg text-dark mb-4 flex items-center">
+                            <i data-feather="tag" class="w-5 h-5 mr-2"></i>
+                            برندها
+                        </h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                                <span class="mr-2 text-gray-700">مای</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                                <span class="mr-2 text-gray-700">لورآل</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                                <span class="mr-2 text-gray-700">ایزی</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                                <span class="mr-2 text-gray-700">نیوآ</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                                <span class="mr-2 text-gray-700">گارنیر</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Special Offers -->
+                    <div>
+                        <h3 class="font-bold text-lg text-dark mb-4 flex items-center">
+                            <i data-feather="zap" class="w-5 h-5 mr-2"></i>
+                            پیشنهادهای ویژه
+                        </h3>
+                        <div class="bg-primary/10 rounded-xl p-4">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-primary text-white p-2 rounded-lg mr-3">
+                                    <i data-feather="percent" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">تخفیف ۲۰٪</h4>
+                                    <p class="text-xs text-gray-600">برای خریدهای بالای ۵۰۰ هزار تومان</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-primary text-white p-2 rounded-lg mr-3">
+                                    <i data-feather="gift" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">هدیه رایگان</h4>
+                                    <p class="text-xs text-gray-600">با اولین خرید از نیلا بیوتی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products -->
+            <div class="md:w-3/4">
+                <!-- Sort and Filter -->
+                <div class="bg-white rounded-2xl shadow-lg p-4 mb-6 flex flex-col sm:flex-row justify-between items-center">
+                    <div class="mb-3 sm:mb-0">
+                        <span class="text-gray-600">نمایش ۱–۱۲ از ۸۶ محصول</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gray-600 mr-2">مرتب سازی:</span>
+                        <select class="bg-gray-100 border-0 rounded-lg px-3 py-2 focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option>پربازدیدترین</option>
+                            <option>پرفروش‌ترین</option>
+                            <option>جدیدترین</option>
+                            <option>ارزان‌ترین</option>
+                            <option>گران‌ترین</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/24" alt="کرم پودر" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                            <div class="absolute top-2 left-2 bg-primary text-white text-xs px-2 py-1 rounded">جدید</div>
+                            <button class="absolute top-2 right-2 bg-white/80 hover:bg-white text-dark p-2 rounded-full transition-all">
+                                <i data-feather="heart" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">کرم پودر مات مای</h3>
+                                <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded">پرفروش</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-primary font-bold block">۲۴۰,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/25" alt="رژ لب" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                            <div class="absolute top-2 left-2 bg-secondary text-white text-xs px-2 py-1 rounded">تخفیف</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">رژ لب مایع مات لورآل</h3>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-gray-400 line-through text-sm">۱۸۰,۰۰۰ تومان</span>
+                                    <span class="text-primary font-bold block">۱۵۹,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/26" alt="سایه چشم" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">سایه چشم مایع ایزی</h3>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-primary font-bold block">۱۲۰,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3"></i>
+                                        <i data-feather="star" class="w-3 h-3"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/27" alt="خط چشم" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                            <div class="absolute top-2 left-2 bg-dark text-white text-xs px-2 py-1 rounded">ویژه</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">خط چشم مایع ضد آب</h3>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-primary font-bold block">۹۵,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/28" alt="کرم مرطوب کننده" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">کرم مرطوب کننده نیوآ</h3>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-primary font-bold block">۲۸۰,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="http://static.photos/cosmetic/320x240/29" alt="عطر زنانه" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                            <div class="absolute top-2 left-2 bg-primary text-white text-xs px-2 py-1 rounded">پرفروش</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-medium text-dark">عطر زنانه فلورال</h3>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-primary font-bold block">۴۵۰,۰۰۰ تومان</span>
+                                    <div class="flex text-yellow-400 mt-1">
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                        <i data-feather="star" class="w-3 h-3"></i>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart bg-primary hover:bg-dark text-white p-2 rounded-full transition-all">
+                                    <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-10">
+                    <nav class="flex items-center space-x-1">
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">
+                            <i data-feather="chevrons-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">
+                            <i data-feather="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="px-3 py-1 rounded-full bg-primary text-white">1</a>
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">2</a>
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">3</a>
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">
+                            <i data-feather="chevron-left" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="px-3 py-1 rounded-full text-gray-500 hover:bg-primary/10 hover:text-primary">
+                            <i data-feather="chevrons-left" class="w-4 h-4"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تماس با نیلا بیوتی - فروشگاه تخصصی لوازم آرایشی و بهداشتی">
+    <title>تماس با ما | نیلا بیوتی</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b8b',
+                        secondary: '#ffb8c6',
+                        dark: '#3f1721',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-white to-pink-50 font-sans">
+    <custom-header></custom-header>
+    
+    <main class="container mx-auto px-4 py-12">
+        <!-- Contact Hero -->
+        <section class="relative rounded-3xl overflow-hidden mb-12 h-64">
+            <img src="http://static.photos/office/1200x630/30" alt="تماس با نیلا بیوتی" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-dark/60 to-primary/60 flex items-center justify-center">
+                <h1 class="text-4xl font-bold text-white">تماس با ما</h1>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-3xl font-bold text-dark mb-8">راه‌های ارتباطی</h2>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i data-feather="map-pin" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-dark mb-1">آدرس فروشگاه</h3>
+                            <p class="text-gray-600">تهران، خیابان ولیعصر، کوچه فلان، پلاک ۱۲۳</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i data-feather="phone" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-dark mb-1">تلفن تماس</h3>
+                            <p class="text-gray-600">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                            <p class="text-gray-600">۰۹۱۲-۳۴۵-۶۷۸۹</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i data-feather="mail" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-dark mb-1">پست الکترونیک</h3>
+                            <p class="text-gray-600">info@nilabeauty.ir</p>
+                            <p class="text-gray-600">support@nilabeauty.ir</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i data-feather="clock" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-dark mb-1">ساعات کاری</h3>
+                            <p class="text-gray-600">شنبه تا چهارشنبه: ۹ صبح تا ۸ شب</p>
+                            <p class="text-gray-600">پنجشنبه: ۹ صبح تا ۴ بعدازظهر</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="mt-10">
+                    <h3 class="font-bold text-lg text-dark mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-primary hover:text-white transition-all">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-primary hover:text-white transition-all">
+                            <i data-feather="telegram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-primary hover:text-white transition-all">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="social-icon bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-primary hover:text-white transition-all">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-dark mb-6">فرم تماس با ما</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 mb-2">نام و نام خانوادگی</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 mb-2">پست الکترونیک</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 mb-2">شماره تماس</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject" class="block text-gray-700 mb-2">موضوع</label>
+                        <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option>انتخاب کنید</option>
+                            <option>پرسش درباره محصولات</option>
+                            <option>پیگیری سفارش</option>
+                            <option>پیشنهادات و انتقادات</option>
+                            <option>همکاری با ما</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 mb-2">پیام شما</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-dark text-white px-6 py-3 rounded-lg font-medium transition-all">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-16">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.123456789012!2d51.12345678901234!3d35.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDA3JzI0LjQiTiA1McKwMDcnMjQuNCJF!5e0!3m2!1sen!2sir!4v1234567890123!5m2!1sen!2sir" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- FAQ -->
+        <section>
+            <h2 class="text-3xl font-bold text-dark mb-8 text-center">پرسش‌های متداول</h2>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border-b border-gray-100">
+                    <button class="faq-question w-full flex justify-between items-center p-6 hover:bg-gray-50 transition-all">
+                        <span class="font-medium text-dark text-lg">چگونه می‌توانم از اصالت محصولات مطمئن شوم؟</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">تمام محصولات نیلا بیوتی از نمایندگی‌های رسمی برندها تهیه می‌شوند و دارای هولوگرام اصالت کالا هستند. شما می‌توانید با اسکن QR Code روی محصول از اصالت آن مطمئن شوید.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border-b border-gray-100">
+                    <button class="faq-question w-full flex justify-between items-center p-6 hover:bg-gray-50 transition-all">
+                        <span class="font-medium text-dark text-lg">شرایط بازگشت کالا چگونه است؟</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">در صورت عدم رضایت از محصول، می‌توانید تا ۷ روز پس از دریافت سفارش، کالا را بازگردانید. کالا باید در شرایط اولیه و بدون استفاده باشد. هزینه بازگشت کالا بر عهده مشتری است.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border-b border-gray-100">
+                    <button class="faq-question w-full flex justify-between items-center p-6 hover:bg-gray-50 transition-all">
+                        <span class="font-medium text-dark text-lg">روش‌های پرداخت چه هستند؟</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">شما می‌توانید از طریق درگاه پرداخت اینترنتی، کارت به کارت و یا پرداخت در محل (فقط برای شهر تهران) هزینه سفارش خود را پرداخت نمایید.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center p-6 hover:bg-gray-50 transition-all">
+                        <span class="font-medium text-dark text-lg">مدت زمان ارسال سفارش چقدر است؟</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">سفارشات تهران حداکثر تا ۲۴ ساعت و سفارشات شهرستان حداکثر تا ۷۲ ساعت پس از ثبت سفارش ارسال می‌شوند. در صورتی که محصولی موجود نباشد، با شما تماس گرفته می‌شود.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

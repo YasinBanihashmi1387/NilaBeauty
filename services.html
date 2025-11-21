@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خدمات نیلا بیوتی - مشاوره تخصصی زیبایی و آرایش">
+    <title>خدمات ما | نیلا بیوتی</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b8b',
+                        secondary: '#ffb8c6',
+                        dark: '#3f1721',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-white to-pink-50 font-sans">
+    <custom-header></custom-header>
+    
+    <main class="container mx-auto px-4 py-12">
+        <!-- Services Hero -->
+        <section class="relative rounded-3xl overflow-hidden mb-12 h-64">
+            <img src="http://static.photos/cosmetic/1200x630/19" alt="خدمات نیلا بیوتی" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-dark/60 to-primary/60 flex items-center justify-center">
+                <h1 class="text-4xl font-bold text-white">خدمات تخصصی ما</h1>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-dark mb-12 text-center">خدمات اختصاصی نیلا بیوتی</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary/10 flex items-center justify-center p-6">
+                            <i data-feather="user" class="text-primary w-12 h-12"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="font-bold text-xl text-dark mb-3">مشاوره تخصصی آرایش</h3>
+                            <p class="text-gray-600 mb-4">با مشاوره رایگان متخصصان ما، بهترین محصولات متناسب با نوع پوست و سلیقه شما را پیدا کنید.</p>
+                            <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
+                                اطلاعات بیشتر
+                                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary/10 flex items-center justify-center p-6">
+                            <i data-feather="video" class="text-primary w-12 h-12"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="font-bold text-xl text-dark mb-3">آموزش‌های ویدیویی</h3>
+                            <p class="text-gray-600 mb-4">آموزش‌های حرفه‌ای آرایش و مراقبت پوست توسط بهترین آرایشگران کشور.</p>
+                            <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
+                                مشاهده آموزش‌ها
+                                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary/10 flex items-center justify-center p-6">
+                            <i data-feather="gift" class="text-primary w-12 h-12"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="font-bold text-xl text-dark mb-3">هدیه و بسته‌های ویژه</h3>
+                            <p class="text-gray-600 mb-4">بسته‌های هدیه زیبا و متنوع برای مناسبت‌های مختلف با امکان شخصی‌سازی.</p>
+                            <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
+                                مشاهده بسته‌ها
+                                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-primary/10 flex items-center justify-center p-6">
+                            <i data-feather="calendar" class="text-primary w-12 h-12"></i>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="font-bold text-xl text-dark mb-3">رویدادهای زیبایی</h3>
+                            <p class="text-gray-600 mb-4">شرکت در رویدادهای اختصاصی نیلا بیوتی و ملاقات با متخصصان زیبایی.</p>
+                            <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
+                                برنامه رویدادها
+                                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Consultation -->
+        <section class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 mb-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <h2 class="text-2xl font-bold text-white mb-4">مشاوره رایگان زیبایی</h2>
+                        <p class="text-white/90 mb-4">متخصصان ما آماده پاسخگویی به سوالات شما در زمینه آرایش و مراقبت پوست هستند.</p>
+                        <ul class="text-white/90 space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 mr-2"></i>
+                                <span>مشاوره تخصصی رایگان</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 mr-2"></i>
+                                <span>پاسخگویی ۲۴ ساعته</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 mr-2"></i>
+                                <span>راهنمای انتخاب محصولات</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-white rounded-xl p-6 shadow-lg">
+                        <h3 class="font-bold text-dark mb-4">فرم درخواست مشاوره</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="نام و نام خانوادگی" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <input type="tel" placeholder="شماره تماس" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option>موضوع مشاوره</option>
+                                    <option>آرایش صورت</option>
+                                    <option>مراقبت پوست</option>
+                                    <option>آرایش چشم</option>
+                                    <option>محصولات مو</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-dark text-white px-6 py-3 rounded-lg font-medium transition-all">ارسال درخواست</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            <h2 class="text-3xl font-bold text-dark mb-12 text-center">نظرات مشتریان</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/20" alt="فاطمه رضایی" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-dark">فاطمه رضایی</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"محصولات نیلا بیوتی واقعا باکیفیت و اصل هستند. مشاوره خوبی گرفتم و رژ لب مایعشون عالیه!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/21" alt="زهرا حسینی" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-dark">زهرا حسینی</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"آموزش‌های ویدیویی خیلی به من کمک کرد که آرایش بهتری داشته باشم. ممنون از تیم حرفه‌ای نیلا بیوتی"</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/22" alt="نازنین کریمی" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-dark">نازنین کریمی</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"بسته هدیه رو برای دوستم گرفتم که خیلی خوشش اومد. بسته‌بندی شیک و محصولات باکیفیتی داشت."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
