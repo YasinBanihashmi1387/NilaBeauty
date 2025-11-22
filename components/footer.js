@@ -1,7 +1,6 @@
 class CustomFooter extends HTMLElement {
-    connectedCallback() {
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <style>
           .footer-link {
             position: relative;
@@ -41,9 +40,6 @@ class CustomFooter extends HTMLElement {
                 <div class="flex space-x-4">
                   <a href="#" class="social-icon bg-white/10 hover:bg-primary text-white p-2 rounded-full">
                     <i data-feather="instagram" class="w-4 h-4"></i>
-                  </a>
-                  <a href="#" class="social-icon bg-white/10 hover:bg-primary text-white p-2 rounded-full">
-                    <i data-feather="telegram" class="w-4 h-4"></i>
                   </a>
                   <a href="#" class="social-icon bg-white/10 hover:bg-primary text-white p-2 rounded-full">
                     <i data-feather="twitter" class="w-4 h-4"></i>
@@ -106,7 +102,7 @@ class CustomFooter extends HTMLElement {
           </div>
         </footer>
       `;
-    }
   }
-  
-  customElements.define('custom-footer', CustomFooter);
+}
+
+customElements.define("custom-footer", CustomFooter);

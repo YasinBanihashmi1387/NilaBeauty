@@ -1,216 +1,370 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="نیلا بیوتی - فروشگاه تخصصی لوازم آرایشی و بهداشتی با بهترین برندهای روز دنیا">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="نیلا بیوتی - فروشگاه تخصصی لوازم آرایشی و بهداشتی با بهترین برندهای روز دنیا"
+    />
     <title>نیلا بیوتی | فروشگاه لوازم آرایشی</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#ff6b8b',
-                        secondary: '#ffb8c6',
-                        dark: '#3f1721',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff6b8b",
+              secondary: "#ffb8c6",
+              dark: "#3f1721",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-gradient-to-b from-white to-pink-50 font-sans">
+  </head>
+  <body class="bg-gradient-to-b from-white to-pink-50 font-sans">
     <custom-header></custom-header>
-    
+
     <main class="container mx-auto px-4 py-8">
-        <!-- Hero Section -->
-        <section class="relative rounded-3xl overflow-hidden mb-12 h-96">
-            <img src="http://static.photos/cosmetic/1200x630/1" alt="لوازم آرایشی" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-r from-dark/60 to-primary/60 flex items-center px-12">
-                <div class="text-white max-w-lg">
-                    <h1 class="text-4xl font-bold mb-4">زیبایی خود را با نیلا بیوتی کشف کنید</h1>
-                    <p class="text-lg mb-6">بهترین محصولات آرایشی و بهداشتی با کیفیت عالی و قیمت مناسب</p>
-                    <a href="shop.html" class="bg-white text-primary px-6 py-3 rounded-full font-medium hover:bg-secondary hover:text-white transition-all">مشاهده محصولات</a>
-                </div>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section class="relative rounded-3xl overflow-hidden mb-12 h-96">
+        <img
+          src="http://static.photos/cosmetic/1200x630/1"
+          alt="لوازم آرایشی"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-dark/60 to-primary/60 flex items-center px-12"
+        >
+          <div class="text-white max-w-lg">
+            <h1 class="text-4xl font-bold mb-4">
+              زیبایی خود را با نیلا بیوتی کشف کنید
+            </h1>
+            <p class="text-lg mb-6">
+              بهترین محصولات آرایشی و بهداشتی با کیفیت عالی و قیمت مناسب
+            </p>
+            <a
+              href="shop.html"
+              class="bg-white text-primary px-6 py-3 rounded-full font-medium hover:bg-secondary hover:text-white transition-all"
+              >مشاهده محصولات</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- Featured Categories -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-8 text-dark text-center">دسته بندی محصولات</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <a href="#" class="category-card group">
-                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center">
-                        <div class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all">
-                            <img src="http://static.photos/cosmetic/200x200/2" alt="آرایش صورت" class="w-20 h-20 object-contain">
-                        </div>
-                        <h3 class="font-medium text-dark text-center">آرایش صورت</h3>
-                    </div>
-                </a>
-                <a href="#" class="category-card group">
-                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center">
-                        <div class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all">
-                            <img src="http://static.photos/cosmetic/200x200/3" alt="مراقبت پوست" class="w-20 h-20 object-contain">
-                        </div>
-                        <h3 class="font-medium text-dark text-center">مراقبت پوست</h3>
-                    </div>
-                </a>
-                <a href="#" class="category-card group">
-                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center">
-                        <div class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all">
-                            <img src="http://static.photos/cosmetic/200x200/4" alt="عطر و ادکلن" class="w-20 h-20 object-contain">
-                        </div>
-                        <h3 class="font-medium text-dark text-center">عطر و ادکلن</h3>
-                    </div>
-                </a>
-                <a href="#" class="category-card group">
-                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center">
-                        <div class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all">
-                            <img src="http://static.photos/cosmetic/200x200/5" alt="آرایش چشم" class="w-20 h-20 object-contain">
-                        </div>
-                        <h3 class="font-medium text-dark text-center">آرایش چشم</h3>
-                    </div>
-                </a>
+      <!-- Featured Categories -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-dark text-center">
+          دسته بندی محصولات
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <a href="#" class="category-card group">
+            <div
+              class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center"
+            >
+              <div
+                class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all"
+              >
+                <img
+                  src="http://static.photos/cosmetic/200x200/2"
+                  alt="آرایش صورت"
+                  class="w-20 h-20 object-contain"
+                />
+              </div>
+              <h3 class="font-medium text-dark text-center">آرایش صورت</h3>
             </div>
-        </section>
+          </a>
+          <a href="#" class="category-card group">
+            <div
+              class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center"
+            >
+              <div
+                class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all"
+              >
+                <img
+                  src="http://static.photos/cosmetic/200x200/3"
+                  alt="مراقبت پوست"
+                  class="w-20 h-20 object-contain"
+                />
+              </div>
+              <h3 class="font-medium text-dark text-center">مراقبت پوست</h3>
+            </div>
+          </a>
+          <a href="#" class="category-card group">
+            <div
+              class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center"
+            >
+              <div
+                class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all"
+              >
+                <img
+                  src="http://static.photos/cosmetic/200x200/4"
+                  alt="عطر و ادکلن"
+                  class="w-20 h-20 object-contain"
+                />
+              </div>
+              <h3 class="font-medium text-dark text-center">عطر و ادکلن</h3>
+            </div>
+          </a>
+          <a href="#" class="category-card group">
+            <div
+              class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center"
+            >
+              <div
+                class="w-32 h-32 mb-4 overflow-hidden rounded-full bg-pink-100 flex items-center justify-center group-hover:bg-primary/10 transition-all"
+              >
+                <img
+                  src="http://static.photos/cosmetic/200x200/5"
+                  alt="آرایش چشم"
+                  class="w-20 h-20 object-contain"
+                />
+              </div>
+              <h3 class="font-medium text-dark text-center">آرایش چشم</h3>
+            </div>
+          </a>
+        </div>
+      </section>
 
-        <!-- Featured Products -->
-        <section class="mb-16">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl font-bold text-dark">محصولات ویژه</h2>
-                <a href="shop.html" class="text-primary hover:text-dark flex items-center">
-                    مشاهده همه
-                    <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
-                </a>
+      <!-- Featured Products -->
+      <section class="mb-16">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-2xl font-bold text-dark">محصولات ویژه</h2>
+          <a
+            href="shop.html"
+            class="text-primary hover:text-dark flex items-center"
+          >
+            مشاهده همه
+            <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="http://static.photos/cosmetic/320x240/6"
+                alt="کرم مرطوب کننده"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute top-2 left-2 bg-primary text-white text-xs px-2 py-1 rounded"
+              >
+                جدید
+              </div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Product 1 -->
-                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/cosmetic/320x240/6" alt="کرم مرطوب کننده" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute top-2 left-2 bg-primary text-white text-xs px-2 py-1 rounded">جدید</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-medium text-dark mb-2">کرم مرطوب کننده ویتامینه</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">۲۹۰,۰۰۰ تومان</span>
-                            <button class="add-to-cart text-secondary hover:text-primary">
-                                <i data-feather="shopping-cart" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/cosmetic/320x240/7" alt="رژ لب" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute top-2 left-2 bg-secondary text-white text-xs px-2 py-1 rounded">پرفروش</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-medium text-dark mb-2">رژ لب مایع مات</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">۱۸۰,۰۰۰ تومان</span>
-                            <button class="add-to-cart text-secondary hover:text-primary">
-                                <i data-feather="shopping-cart" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/cosmetic/320x240/8" alt="پالت سایه" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute top-2 left-2 bg-dark text-white text-xs px-2 py-1 rounded">تخفیف</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-medium text-dark mb-2">پالت سایه چشم ۱۲ رنگ</h3>
-                        <div class="flex justify-between items-center">
-                            <div>
-                                <span class="text-gray-400 line-through text-sm">۳۵۰,۰۰۰ تومان</span>
-                                <span class="text-primary font-bold block">۲۹۹,۰۰۰ تومان</span>
-                            </div>
-                            <button class="add-to-cart text-secondary hover:text-primary">
-                                <i data-feather="shopping-cart" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/cosmetic/320x240/9" alt="عطر زنانه" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-medium text-dark mb-2">عطر زنانه فلورال</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold">۴۲۰,۰۰۰ تومان</span>
-                            <button class="add-to-cart text-secondary hover:text-primary">
-                                <i data-feather="shopping-cart" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="p-4">
+              <h3 class="font-medium text-dark mb-2">
+                کرم مرطوب کننده ویتامینه
+              </h3>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold">۲۹۰,۰۰۰ تومان</span>
+                <button class="add-to-cart text-secondary hover:text-primary">
+                  <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Beauty Tips -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-8 text-dark text-center">نکات زیبایی</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <img src="http://static.photos/cosmetic/640x360/10" alt="نکات آرایشی" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-dark mb-3">۵ ترفند برای آرایش ماندگار</h3>
-                        <p class="text-gray-600 mb-4">با این ترفندهای ساده می‌توانید آرایشی ماندگار و بی نقص داشته باشید...</p>
-                        <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
-                            ادامه مطلب
-                            <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <img src="http://static.photos/cosmetic/640x360/11" alt="مراقبت پوست" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-dark mb-3">روتین مراقبت پوست در فصل سرما</h3>
-                        <p class="text-gray-600 mb-4">با تغییر فصل، پوست شما نیاز به مراقبت ویژه دارد. این روتین ساده را دنبال کنید...</p>
-                        <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
-                            ادامه مطلب
-                            <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
-                    <img src="http://static.photos/cosmetic/640x360/12" alt="مدل ابرو" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-dark mb-3">بهترین مدل ابرو برای فرم صورت شما</h3>
-                        <p class="text-gray-600 mb-4">با انتخاب مدل ابروی مناسب می‌توانید زیبایی چهره خود را دوچندان کنید...</p>
-                        <a href="#" class="text-primary hover:text-dark flex items-center text-sm">
-                            ادامه مطلب
-                            <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="http://static.photos/cosmetic/320x240/7"
+                alt="رژ لب"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute top-2 left-2 bg-secondary text-white text-xs px-2 py-1 rounded"
+              >
+                پرفروش
+              </div>
             </div>
-        </section>
+            <div class="p-4">
+              <h3 class="font-medium text-dark mb-2">رژ لب مایع مات</h3>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold">۱۸۰,۰۰۰ تومان</span>
+                <button class="add-to-cart text-secondary hover:text-primary">
+                  <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
-        <!-- Newsletter -->
-        <section class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 mb-16">
-            <div class="max-w-2xl mx-auto text-center text-white">
-                <h2 class="text-2xl font-bold mb-4">عضویت در خبرنامه نیلا بیوتی</h2>
-                <p class="mb-6">برای دریافت جدیدترین محصولات، تخفیف‌ها و نکات زیبایی در خبرنامه ما عضو شوید</p>
-                <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-                    <input type="email" placeholder="آدرس ایمیل شما" class="flex-grow px-4 py-3 rounded-full focus:outline-none text-dark">
-                    <button type="submit" class="bg-dark hover:bg-black text-white px-6 py-3 rounded-full font-medium transition-all">عضویت</button>
-                </form>
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="http://static.photos/cosmetic/320x240/8"
+                alt="پالت سایه"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute top-2 left-2 bg-dark text-white text-xs px-2 py-1 rounded"
+              >
+                تخفیف
+              </div>
             </div>
-        </section>
+            <div class="p-4">
+              <h3 class="font-medium text-dark mb-2">پالت سایه چشم ۱۲ رنگ</h3>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="text-gray-400 line-through text-sm"
+                    >۳۵۰,۰۰۰ تومان</span
+                  >
+                  <span class="text-primary font-bold block"
+                    >۲۹۹,۰۰۰ تومان</span
+                  >
+                </div>
+                <button class="add-to-cart text-secondary hover:text-primary">
+                  <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="http://static.photos/cosmetic/320x240/9"
+                alt="عطر زنانه"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-dark mb-2">عطر زنانه فلورال</h3>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold">۴۲۰,۰۰۰ تومان</span>
+                <button class="add-to-cart text-secondary hover:text-primary">
+                  <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beauty Tips -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-dark text-center">
+          نکات زیبایی
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <img
+              src="http://static.photos/cosmetic/640x360/10"
+              alt="نکات آرایشی"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-dark mb-3">
+                ۵ ترفند برای آرایش ماندگار
+              </h3>
+              <p class="text-gray-600 mb-4">
+                با این ترفندهای ساده می‌توانید آرایشی ماندگار و بی نقص داشته
+                باشید...
+              </p>
+              <a
+                href="#"
+                class="text-primary hover:text-dark flex items-center text-sm"
+              >
+                ادامه مطلب
+                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <img
+              src="http://static.photos/cosmetic/640x360/11"
+              alt="مراقبت پوست"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-dark mb-3">
+                روتین مراقبت پوست در فصل سرما
+              </h3>
+              <p class="text-gray-600 mb-4">
+                با تغییر فصل، پوست شما نیاز به مراقبت ویژه دارد. این روتین ساده
+                را دنبال کنید...
+              </p>
+              <a
+                href="#"
+                class="text-primary hover:text-dark flex items-center text-sm"
+              >
+                ادامه مطلب
+                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+          >
+            <img
+              src="http://static.photos/cosmetic/640x360/12"
+              alt="مدل ابرو"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-dark mb-3">
+                بهترین مدل ابرو برای فرم صورت شما
+              </h3>
+              <p class="text-gray-600 mb-4">
+                با انتخاب مدل ابروی مناسب می‌توانید زیبایی چهره خود را دوچندان
+                کنید...
+              </p>
+              <a
+                href="#"
+                class="text-primary hover:text-dark flex items-center text-sm"
+              >
+                ادامه مطلب
+                <i data-feather="chevron-left" class="mr-1 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section
+        class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 mb-16"
+      >
+        <div class="max-w-2xl mx-auto text-center text-white">
+          <h2 class="text-2xl font-bold mb-4">عضویت در خبرنامه نیلا بیوتی</h2>
+          <p class="mb-6">
+            برای دریافت جدیدترین محصولات، تخفیف‌ها و نکات زیبایی در خبرنامه ما
+            عضو شوید
+          </p>
+          <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="آدرس ایمیل شما"
+              class="flex-grow px-4 py-3 rounded-full focus:outline-none text-dark"
+            />
+            <button
+              type="submit"
+              class="bg-dark hover:bg-black text-white px-6 py-3 rounded-full font-medium transition-all"
+            >
+              عضویت
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <custom-footer></custom-footer>
@@ -219,7 +373,7 @@
     <script src="components/footer.js"></script>
     <script src="script.js"></script>
     <script>
-        feather.replace();
+      feather.replace();
     </script>
-</body>
+  </body>
 </html>
